@@ -1,0 +1,124 @@
+.card {
+  width: 100%;
+  cursor: pointer;
+}
+
+.wrap_img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.7;
+}
+
+.card_img {
+  z-index: 1;
+}
+
+.project_preview {
+  position: relative;
+  width: 90%;
+  height: 43%;
+  margin: 0 auto;
+  padding-top: 2.8rem;
+}
+
+.project_preview_img {
+  margin: 1.7rem 0;
+  object-fit: contain;
+  object-fit: fill;
+}
+
+.cardTextPath {
+  position: absolute;
+  top: 46%;
+  width: 100%;
+  height: fit-content;
+  z-index: 100;
+
+  & > text {
+    text-align: center;
+
+    & > textPath {
+      text-align: center;
+      font-size: 6rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.desc {
+  position: absolute;
+  top: 68%;
+  left: 18%;
+  width: 67%;
+  height: 22%;
+  font-size: 1.6rem;
+  overflow: scroll;
+  z-index: 1;
+}
+
+.heart_wrap {
+  position: absolute;
+  top: 56%;
+  left: 48%;
+  width: 2rem;
+  height: 3rem;
+  z-index: 0;
+  border-radius: 100%;
+}
+
+.heart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.heart::after {
+  content: "";
+  top: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(128, 186, 232, 0) 70%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  z-index: 1;
+  animation: slide 6s infinite ease-in-out;
+}
+
+.deploy {
+  position: absolute;
+  bottom: -2.5%;
+  right: -4.5%;
+  z-index: 2;
+  width: 4rem;
+  height: 4rem;
+}
+
+.github {
+  position: absolute;
+  bottom: -4%;
+  left: -6%;
+  z-index: 2;
+  width: 5rem;
+  height: 5rem;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-150%);
+  }
+
+  50% {
+    transform: translateX(90%);
+  }
+
+  100% {
+    transform: translateX(-150%);
+  }
+}

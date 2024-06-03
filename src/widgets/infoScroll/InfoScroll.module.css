@@ -1,0 +1,272 @@
+.infoScroll {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  margin-top: 0 auto;
+  width: 100%;
+  max-width: 144rem;
+  max-width: 100vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  height: 90dvh;
+  max-height: 50rem;
+  aspect-ratio: 9/12;
+  max-width: 100vw;
+  aspect-ratio: 9/11;
+  margin: 0 auto;
+}
+
+.wrap_scroll_body {
+  position: relative;
+  height: 80%;
+  overflow: hidden;
+}
+
+.wrap_scroll_top {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.wrap_scroll_top {
+  height: 22%;
+  z-index: 2;
+}
+
+.scroll_body,
+.scroll_top {
+  filter: brightness(60%);
+}
+
+.scroll_top {
+  margin-top: -9%;
+}
+
+.scroll_body {
+  margin-top: 0%;
+  transition: 1s;
+}
+
+.content {
+  position: absolute;
+  top: 17%;
+  left: 16%;
+  width: 100%;
+  max-width: 70%;
+  height: 60%;
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  overflow: hidden;
+}
+
+.content_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.wrap_content {
+  position: absolute;
+  transition: 1s;
+}
+
+.name {
+  font-size: 5.2vh;
+}
+
+.class,
+.lvl {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.class_label,
+.lvl_label {
+  text-decoration: underline;
+}
+
+.class_name,
+.lvl_value,
+.lvl_label,
+.class_label {
+  font-size: 3.2vh;
+}
+
+.characteristics_title {
+  margin-block: 0.4rem;
+  font-size: 4.2vh;
+  text-align: center;
+}
+
+.switch {
+  position: absolute;
+  bottom: -2%;
+  width: 30%;
+  aspect-ratio: 0.9;
+  margin-left: 37%;
+  background: transparent;
+  border: none;
+  z-index: 3;
+}
+
+.switch_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.switch_text {
+  position: absolute;
+  top: 28%;
+  left: 32%;
+  font-size: 2.4vh;
+  font-weight: 600;
+  z-index: 4;
+}
+
+.open {
+  margin-top: 120%;
+  transition: 1.4s ease-in-out;
+}
+
+.open.wrap_content {
+  margin-top: 205%;
+  transition: 1.4s ease-in-out;
+}
+
+.socials {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.socials_link {
+  display: inline-block;
+  width: fit-content;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  fill: black;
+}
+
+@media (min-width: 480px) {
+  .wrapper {
+    max-height: 70rem;
+  }
+}
+
+@media (min-width: 680px) {
+  .infoScroll {
+    width: 85%;
+  }
+
+  .wrapper {
+    max-height: 70rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .infoScroll {
+    width: 75%;
+  }
+
+  .wrapper {
+    max-height: 85rem;
+  }
+
+  .switch_text {
+    left: 34%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .infoScroll {
+    width: 65%;
+  }
+
+  .wrapper {
+    max-height: 90rem;
+  }
+}
+
+@media (min-height: 540px) and (max-width: 440px) {
+  .name {
+    font-size: 5vh;
+  }
+
+  .characteristics_title {
+    font-size: 4.5vh;
+  }
+
+  .class_name,
+  .lvl_value,
+  .lvl_label,
+  .class_label,
+  .switch_text {
+    font-size: 3.5vh;
+  }
+}
+
+@media (min-height: 640px) and (max-width: 440px) {
+  .name {
+    font-size: 4vh;
+  }
+
+  .characteristics_title {
+    font-size: 3.8vh;
+  }
+
+  .class_name,
+  .lvl_value,
+  .lvl_label,
+  .class_label,
+  .switch_text {
+    font-size: 2.8vh;
+  }
+}
+
+@media (min-height: 810px) and (max-width: 500px) {
+  .name {
+    font-size: 3.8vh;
+  }
+
+  .characteristics_title {
+    font-size: 3.2vh;
+  }
+
+  .class_name,
+  .lvl_value,
+  .lvl_label,
+  .class_label,
+  .switch_text {
+    font-size: 2vh;
+  }
+}
+
+@media (min-height: 940px) and (max-width: 920px) {
+  .name {
+    font-size: 3.8vh;
+  }
+
+  .characteristics_title {
+    font-size: 3.2vh;
+  }
+
+  .class_name,
+  .lvl_value,
+  .lvl_label,
+  .class_label,
+  .switch_text {
+    font-size: 2vh;
+  }
+}

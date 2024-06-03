@@ -1,0 +1,7 @@
+.dndLabel {
+  width: 65%;
+  height: 85%;
+  margin: 1rem auto 0;
+  position: relative;
+  transform: rotate(3deg);
+}

@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fallback {
+  height: 100dvh;
+  width: 100%;
+  background-color: black;
+}
+
+.label {
+  position: absolute;
+  top: 7rem;
+  right: -10rem;
+  width: 25rem;
+  height: 5rem;
+  background-color: white;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: 101;
+}
+
+@media (min-width: 680px) {
+  .label {
+    width: 45rem;
+    height: 10rem;
+  }
+}

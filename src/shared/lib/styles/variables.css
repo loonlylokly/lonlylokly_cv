@@ -1,0 +1,49 @@
+:root {
+  /* Colors */
+  --clr-black: 0, 0%, 16.86%;
+  --clr-gray: 0, 0%, 23%;
+  --clr-gray-light: 60, 0.41%, 51.96%;
+  --clr-white: 0, 0%, 100%;
+  --clr-purple: 266, 100%, 67%;
+
+  --clr-text: var(--clr-black);
+  --clr-bg: var(--clr-black);
+  --clr-brd: var(--clr-black);
+
+  /* Gradients */
+
+  /* Borders */
+
+  /* Padding */
+
+  /* Margins */
+
+  /* Gaps */
+
+  /* Z-indexes*/
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+  } */
+}
+
+@media (min-width: 834px) {
+  /* :root { */
+  /* Padding */
+
+  /* Margins */
+
+  /* Gaps */
+  /* } */
+}
+
+@media (min-width: 1280px) {
+  /* :root { */
+  /* Padding */
+
+  /* Margins */
+
+  /* Gaps */
+  /* } */
+}

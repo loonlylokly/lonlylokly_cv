@@ -1,0 +1,45 @@
+.characteristic {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+
+.label {
+  width: 60%;
+  font-size: 2.8vh;
+}
+
+.progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 1.5rem;
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+  background: transparent;
+
+  &::-webkit-progress-bar,
+  &::-moz-progress-bar,
+  &::-webkit-progress-value {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background: var(--clr-fill);
+    animation: 2s ease-in-out infinite alternate bg-move;
+  }
+}
+
+@keyframes bg-move {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 160%;
+  }
+}
+
+@media (min-height: 640px) and (max-width: 440px) {
+  .label {
+    font-size: 2.4vh;
+  }
+}

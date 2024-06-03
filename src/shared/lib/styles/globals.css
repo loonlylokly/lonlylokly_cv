@@ -1,0 +1,60 @@
+@import "./variables.css";
+@import "./normalize.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  font-family: var(--font-fondamento);
+  font-size: 1.2rem;
+  color: var(--clr-text);
+  background-color: var(--clr-back);
+}
+
+a {
+  color: var(--clr-text);
+  text-decoration: none;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.progress {
+  &::-webkit-progress-bar {
+    background: inherit;
+  }
+  &::-webkit-progress-value {
+    background: inherit;
+  }
+  &::-moz-progress-bar {
+    background: inherit;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
